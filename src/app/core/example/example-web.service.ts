@@ -9,7 +9,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ExampleWebService extends BaseHttpService<Example> implements ExampleService {
 
-  resourceEndpoint = 'user';
+  resourceEndpoint = 'examples';
 
   constructor(
     protected http: HttpClient

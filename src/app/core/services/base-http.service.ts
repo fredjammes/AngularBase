@@ -19,7 +19,7 @@ export abstract class BaseHttpService<TModel extends { id: string }> extends Bas
     return this.http.post<TModel>(this.resourceEndpoint, model);
   }
   modify(model: TModel): Observable<TModel> {
-    return this.http.post<TModel>(this.resourceEndpoint, model);
+    return this.http.put<TModel>(this.resourceEndpoint, model);
   }
   delete(id: string): Observable<void> {
     return this.http.delete<void>(`${this.resourceEndpoint}/${id}`);

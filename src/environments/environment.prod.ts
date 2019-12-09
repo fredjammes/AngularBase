@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  isMockEnabled: false
+  isMockEnabled: false,
+  apiHost: 'http://example.com'
 };
